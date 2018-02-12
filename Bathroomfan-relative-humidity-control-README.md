@@ -1,5 +1,5 @@
-# Bathroomfan-relative-humidity-control
-Wemos D1mini and DHT22 control relay for Bathroomfan
+# bathroomFan-relative-humidity-control
+Wemos D1mini and DHT22 control relay for bathroomfan
 
 Trying to make a relative humidity controlled bathroom fan.. Using a Wemos D1mini, DHT22, and a relay
 Found the Blynk app and used it to check and put it in a graph on my iphone..
