@@ -21,11 +21,11 @@ byte hiHumidity = 30;  // relay ADD
 byte lowHumidity = 35;  // relay ADD
 
 // Auth Token App via Mail of printscreen
-char auth[] = "f282b83a0fb54a5c82c3225e4541d11e";
+char auth[] = "##########";
 
 void setup() {
   Serial.begin(115200);
-  Blynk.begin(auth, "G.E.C.K", "ewRiOrgRSqCE");
+  Blynk.begin(auth, "#######", "##########");
   dht.begin();}
 
 void gettemperature() {
@@ -44,17 +44,10 @@ void gettemperature() {
     temp = dht.readTemperature(false);     // Read temperature as Fahrenheit
 
   
-
+    
     Blynk.virtualWrite(V0, temp);
     Blynk.virtualWrite(V1, humidity);
-
-
-    Serial.print("Humidity ");      // Serial Monitor
-    Serial.print(humidity);     
-    Serial.println(" %\t");
-    Serial.print("Temperature: ");
-    Serial.print(temp);
-    Serial.println(" *C ");
+    
     
     if (humidity >= hiHumidity)
       {
